@@ -2,13 +2,39 @@
 
 ## Getting the environment up and ready
 
-Make sure that you have docker-compose installed([installation instructions](https://docs.docker.com/compose/install/)).
+- This repository is a forked version of <br>
+  CREDITS: https://github.com/arush-sal/cka-practice-environment
 
-To start the lab environment you can do either of the following two:
-* To use the prebuilt images run: `docker-compose up -d` and point your browser to `http://localhost`
-* To build the images yourself locally run: `docker-compose -f docker-compose-builder.yml up -d` and point your browser to `http://localhost`
+- This fork focusses on binding minikube with practice environment.
 
-Things to note:
-* The setup currently is in `Bring Your Own Cluster` state.
-* If your reload the `exam.html` it will reset the timer as the timer currently being used is jQuery based. - solution WIP
-* Since we are using jQuery to initialize and connect to GateOne therefore the application needs to be reachable from your browser host on port 8080. - solution WIP
+### STEPS
+
+- Run minikube
+
+```
+minikube start --vm-driver=virtualbox
+```
+
+- Run script to adjust the keys locations
+
+```
+sh script.sh
+```
+
+- Boot up the instance
+
+```
+docker-compose up --build
+```
+
+- Visit the test at following URL.
+
+```
+http://localhost
+```
+
+- Visit the terminal at following URL.
+
+```
+http://localhost:8080
+```
