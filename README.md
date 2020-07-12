@@ -1,11 +1,13 @@
-# cka-practice-environment
+# CKA Practice Environment
 
 ## Getting the environment up and ready
 
-- This repository is a forked version of <br>
-  CREDITS: https://github.com/arush-sal/cka-practice-environment
+- This repository is a fork of the original version by Arush Sal which was   enhanced by Ankit Agrawal. <br>
+CREDITS goes to these awesome Kubernauts! <br> 
+Origin: https://github.com/arush-sal/cka-practice-environment <br>
+Enhancement: https://github.com/aankittcoolest/cka-practice-environment
 
-- This fork focusses on binding minikube with practice environment.
+- This fork focusses on binding minikube with the practice environment, which is based on GateOne Terminal.
 
 ### STEPS
 
@@ -21,7 +23,7 @@ minikube start --vm-driver=virtualbox
 sh script.sh
 ```
 
-- Boot up the instance (adapt the user in the compose file)
+- Boot up the instance (please adapt the user in the compose file)
 
 ```
 docker-compose up --build

@@ -1,4 +1,4 @@
-FROM arush/gateone:latest
+FROM kubernautslabs/gateone:latest
 COPY conf.d/ /etc/gateone/conf.d/
 RUN apt-get update && apt-get install wget curl vim openssh-client iputils-ping telnet nmap -y \
 	&& curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl \
