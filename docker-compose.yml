@@ -9,8 +9,8 @@ services:
     - frontend
     volumes:
     - ssh_key:/root/.ssh/
-    - /Users/ankit.agrawal/.kube/:/root/.kube/
-    - /Users/ankit.agrawal/.kube/keys:/root/.kube/keys
+    - /Users/arash/.kube/:/root/.kube/
+    - /Users/arash/.kube/keys:/root/.kube/keys
   lab:
     build: ./lab
     ports:
