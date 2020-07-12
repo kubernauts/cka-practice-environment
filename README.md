@@ -21,7 +21,7 @@ minikube start --vm-driver=virtualbox
 sh script.sh
 ```
 
-- Boot up the instance
+- Boot up the instance (adapt the user in the compose file)
 
 ```
 docker-compose up --build
